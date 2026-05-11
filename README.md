@@ -12,26 +12,29 @@
 <br>
 
 ## Introduction
-<!-- A PHP 8.4+ library for converting JSON data to typed entities and back, with support for lazy-loading collections, mutable data structures, and structured entity design.
-Useful for structured JSON APIs, configuration parsing, and object-based manipulation of hierarchical JSON data. -->
+A PHP 8.4+ library that provides the shared MATRAUX PHP-CS-Fixer configuration.
+It exposes a ready-to-use `ConfigFactory` for project `.php-cs-fixer.dist.php` files and reusable `Rules` presets for custom configurations.
 
+Useful for keeping code style, imports, strict typing, class layout, PHPDoc cleanup, indentation, and line endings consistent across multiple PHP packages.
 
 <br>
 
 ## Features
-<!-- - Object-oriented JSON mapping
-- Conversion from JSON to typed entities and back
-- Lazy-loading collections for efficient memory usage
-- Entity objects are mutable and can be freely modified after creation
-- Strict type support with automatic casting and codec transformations
-- Native support for nested structures and arrays
-- Easy integration with configuration or API responses -->
+- Ready-to-use PHP-CS-Fixer configuration via `ConfigFactory::create()`
+- Reusable rules through `Rules::All` and grouped rule sets
+- PER-CS baseline with automatic PHP migration rules
+- Strict typing, strict comparisons, strict parameters, and function alias cleanup
+- Import ordering, unused import removal, and fully qualified type normalization
+- Class member ordering and class element separation
+- Tabs and LF line endings configured by default
+- Risky PHP-CS-Fixer rules enabled explicitly
+- Stable cache file per configured path set
 
 <br>
 
 ## Installation
 ```bash
-composer require matraux/php-code-style
+composer require --dev matraux/php-code-style
 ```
 
 <br>
@@ -71,7 +74,7 @@ vendor/bin/php-cs-fixer fix
 <br>
 
 ## Development
-See [Development](./docs/Development.md) for debug, test instructions, static analysis, and coding standards.
+See [Development](./docs/Development.md) for debug, static analysis, and coding standards.
 
 <br>
 
