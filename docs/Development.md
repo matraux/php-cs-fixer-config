@@ -18,7 +18,7 @@ composer phpstan     # Run static analysis (PHPStan)
 The project uses PHPStan for static analysis.
 
 - `phpstan.core.neon` - primary config used by the command line
-- `phpstan.neon.dist`- template config for editor integrations
+- `phpstan.neon.dist` - template config for editor integrations
 - `phpstan.neon` - optional local override (copied from `.dist`)
 
 To run PHPStan:
