@@ -1,6 +1,5 @@
 **[Back](../README.md)**
 
-
 # Development
 This package includes several development tools configured via Composer scripts.
 
