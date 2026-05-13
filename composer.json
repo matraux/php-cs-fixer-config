@@ -1,6 +1,6 @@
 {
 	"name": "matraux/php-code-style",
-	"description": "A PHP 8.4+ library providing reusable PHP-CS-Fixer rules and shared code style configuration.",
+	"description": "A PHP 7.4+ library providing reusable PHP-CS-Fixer rules and shared code style configuration.",
 	"keywords": ["PHP Code Style", "php-code-style", "PHP-CS-Fixer", "coding-standard", "MATRAUX"],
 	"type": "library",
 	"license": "MIT",
@@ -12,7 +12,7 @@
 		}
 	],
 	"require": {
-		"php": "^8.4",
+		"php": "^7.4 || ^8.0",
 		"friendsofphp/php-cs-fixer": "^3.95"
 	},
 	"require-dev": {
@@ -28,8 +28,8 @@
 		"source": "https://github.com/matraux/php-code-style"
 	},
 	"scripts": {
-		"cs:check": "php-cs-fixer check",
-		"cs:fix": "php-cs-fixer fix",
+		"cs:check": "php-cs-fixer check --diff --using-cache no",
+		"cs:fix": "php-cs-fixer fix --using-cache no",
 		"phpstan": "phpstan analyse --ansi"
 	},
 	"scripts-descriptions": {
