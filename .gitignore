@@ -2,4 +2,5 @@ composer.lock
 vendor
 phpstan.neon
 .sandbox/*
+.vscode/*
 .php-cs-fixer.php
