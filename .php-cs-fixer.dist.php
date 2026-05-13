@@ -1,7 +1,5 @@
 <?php declare(strict_types=1);
 
-use Matraux\PhpCodeStyle\ConfigFactory;
+use Matraux\PhpCodeStyle\Config;
 
-return ConfigFactory::create(
-	__DIR__ . '/src',
-);
+return new Config(__DIR__ . '/src');
