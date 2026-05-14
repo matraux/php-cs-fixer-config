@@ -9,6 +9,7 @@ final class PhpDoc extends Definition
 	public function getRules(): array
 	{
 		return [
+			'no_empty_phpdoc' => true,
 			'no_superfluous_phpdoc_tags' => [
 				'allow_hidden_params' => true,
 				'allow_mixed' => true,
