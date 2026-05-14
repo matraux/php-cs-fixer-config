@@ -18,7 +18,7 @@ final class Config extends \PhpCsFixer\Config
 		parent::__construct();
 
 		if (!empty($paths)) {
-			$this->setFinder((new Finder())->in($paths));
+			$this->setFinder(new Finder()->in($paths));
 		}
 
 		/** @var list<Definition> $definitions */

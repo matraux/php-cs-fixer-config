@@ -1,6 +1,6 @@
 {
 	"name": "matraux/php-code-style",
-	"description": "A PHP 7.4+ library providing reusable PHP-CS-Fixer rules and shared code style configuration.",
+	"description": "A PHP 8.4+ library providing reusable PHP-CS-Fixer rules and shared code style configuration.",
 	"keywords": ["PHP Code Style", "php-code-style", "PHP-CS-Fixer", "coding-standard", "MATRAUX"],
 	"type": "library",
 	"license": "MIT",
@@ -12,15 +12,23 @@
 		}
 	],
 	"require": {
-		"php": "^7.4 || ^8.0",
+		"php": "^8.4",
 		"friendsofphp/php-cs-fixer": "^3.95"
 	},
 	"require-dev": {
-		"phpstan/phpstan": "^2.1"
+		"phpstan/phpstan": "^2.1",
+		"codeception/codeception": "^5.3",
+		"codeception/module-asserts": "^3.3",
+		"symfony/process": "^8.0"
 	},
 	"autoload": {
 		"psr-4": {
 			"Matraux\\PhpCodeStyle\\": "src"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Matraux\\PhpCodeStyle\\Test\\": "tests"
 		}
 	},
 	"support": {
@@ -30,11 +38,15 @@
 	"scripts": {
 		"cs:check": "php-cs-fixer check --diff --using-cache no",
 		"cs:fix": "php-cs-fixer fix --using-cache no",
-		"phpstan": "phpstan analyse --ansi"
+		"phpstan": "phpstan analyse --ansi",
+		"tests:build": "codecept build",
+		"tests:run": "codecept run"
 	},
 	"scripts-descriptions": {
 		"cs:check": "Check code style",
 		"cs:fix": "Fix code style",
-		"phpstan": "Static code analysis"
+		"phpstan": "Static code analysis",
+		"tests:build": "Build Codeception actors",
+		"tests:run": "Run Codeception tests"
 	}
 }

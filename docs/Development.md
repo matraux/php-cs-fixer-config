@@ -10,6 +10,8 @@ This package includes several development tools configured via Composer scripts.
 composer cs:check    # Run code style check
 composer cs:fix      # Run code style fix
 composer phpstan     # Run static analysis (PHPStan)
+composer tests:build # Build unit tests
+composer tests:run   # Run unit tests
 ```
 
 <br>
@@ -24,4 +26,13 @@ The project uses PHPStan for static analysis.
 To run PHPStan:
 ```bash
 composer phpstan
+```
+
+<br>
+
+## Tests
+To run all tests:
+```bash
+composer tests:build
+composer tests:run
 ```

@@ -2,7 +2,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/matraux/php-code-style.svg?logo=packagist&logoColor=white)](https://packagist.org/packages/matraux/php-code-style)
 [![Last release](https://img.shields.io/github/v/release/matraux/php-code-style?display_name=tag&logo=github&logoColor=white)](https://github.com/matraux/php-code-style/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?logo=open-source-initiative&logoColor=white)](LICENSE)
-[![PHP](https://img.shields.io/badge/PHP-7.4+-blue.svg?logo=php&logoColor=white)](https://php.net)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-blue.svg?logo=php&logoColor=white)](https://php.net)
 [![Security Policy](https://img.shields.io/badge/Security-Policy-blue?logo=bitwarden&logoColor=white)](./.github/SECURITY.md)
 [![Contributing](https://img.shields.io/badge/Contributing-Disabled-lightgrey?logo=github&logoColor=white)](CONTRIBUTING.md)
 [![QA Status](https://img.shields.io/github/actions/workflow/status/matraux/php-code-style/qa.yml?label=Quality+Assurance&logo=checkmarx&logoColor=white)](https://github.com/matraux/php-code-style/actions/workflows/qa.yml)
@@ -12,7 +12,7 @@
 <br>
 
 ## Introduction
-A PHP 7.4+ library that provides the shared MATRAUX PHP-CS-Fixer configuration.
+A PHP 8.4+ library that provides the shared MATRAUX PHP-CS-Fixer configuration.
 It exposes a ready-to-use `Config` for project `.php-cs-fixer.dist.php` files and public grouped rule sets for custom PHP-CS-Fixer configurations.
 
 Useful for keeping code style, imports, strict typing, class layout, PHPDoc cleanup, indentation, and line endings consistent across multiple PHP packages.
@@ -42,6 +42,8 @@ composer require --dev matraux/php-code-style
 | version | PHP | Note |
 | ---- | --- | --- |
 | 1.0.0 | 7.4+ | Support PHP 7.4 |
+| 2.0.0 | 8.3+ | Support PHP 8.3 |
+| 3.0.0 | 8.4+ | Support PHP 8.4 |
 
 <br>
 
