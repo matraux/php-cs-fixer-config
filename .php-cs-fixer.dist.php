@@ -2,4 +2,7 @@
 
 use Matraux\PhpCodeStyle\Config;
 
-return new Config(__DIR__ . '/src');
+return new Config(
+	__DIR__ . '/src',
+	__DIR__ . '/tests/Unit',
+);

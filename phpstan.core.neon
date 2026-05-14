@@ -1,6 +1,15 @@
 parameters:
+	scanDirectories:
+		- %currentWorkingDirectory%/tests/Support
+
 	paths:
 		- %currentWorkingDirectory%/src
+		- %currentWorkingDirectory%/tests
+
+	excludePaths:
+		analyse:
+			- %currentWorkingDirectory%/tests/Support
+			- %currentWorkingDirectory%/tests/data
 
 	tmpDir:
 		%rootDir%/tmp/phpstan
