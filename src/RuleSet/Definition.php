@@ -9,7 +9,7 @@ abstract class Definition implements RuleSetDefinitionInterface
 {
 	public function getName(): string
 	{
-		$name = new ReflectionClass(static::class)->getShortName();
+		$name = (new ReflectionClass(static::class))->getShortName();
 
 		return '@Matraux/' . $name;
 	}
