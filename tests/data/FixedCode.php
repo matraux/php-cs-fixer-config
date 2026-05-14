@@ -83,6 +83,11 @@ final class Code
 		throw new RuntimeException('Failure.');
 	}
 
+	private function inline(string $x, int $y): void
+	{
+		return;
+	}
+
 	private function helper(): bool
 	{
 		if (!$this instanceof self) {
@@ -90,5 +95,10 @@ final class Code
 		}
 
 		return true;
+	}
+
+	public function __get($name)
+	{
+		throw new \Exception('Not implemented');
 	}
 }

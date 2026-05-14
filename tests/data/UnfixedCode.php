@@ -7,21 +7,34 @@ use function strlen;
 use const PHP_VERSION_ID;
 
 use DateTimeImmutable as DateTimeImmutable, RuntimeException;
+
+
+
 use SomeVendor\Package\{ExampleTrait, FirstClass, SecondClass as SecondClass, UnusedClass};
 
 
 
 final class Code
 {
+
+
+
+	public function __get($name)
+	{
+		throw new \Exception('Not implemented');
+	}
+
+	private function inline(string $x,int $y):void{return;}
+
 	public function convert(FirstClass $first, SecondClass $second, \ArrayObject $items, DateTimeImmutable $date) :  string
 	{
-		$empty = [    ];
+			 	 $empty = [    ];
 		$values = [ 'first', 'second' ];
-		$needle = 'first';
+		 	 		 $needle = 'first';
 		$index = array_search($needle, $values);
-		$contains = in_array($needle, $values);
-		$decoded = base64_decode('dGVzdA==');
-		$length = strlen($needle);
+			 	 	$contains = in_array($needle, $values);
+			 	 $decoded = base64_decode('dGVzdA==');
+			 	 	$length = strlen($needle);
 		$version = PHP_VERSION_ID;
 		$copy = clone($items);
 
@@ -38,24 +51,24 @@ final class Code
 
 	private  string $name = ' ugly ';
 
-	public  const  KIND = 'fixture';
+	public    const    KIND = 'fixture';
 
-	use ExampleTrait;
+				use ExampleTrait;
 
 	public static string $staticName = 'static';
 
 	public function __construct()
 	{
-		$total = 1+2 ;
-		$total ++;
+			 	 	 		 	 $total = 1+2 ;
+		 		 $total ++;
 		! $total;
 
 		$same = $total == 3;
-		$different = $total != 4;
-		$integer = is_integer($total);
-		$double = is_double(1.0);
-		$count = sizeof([ 'x' ]);
-		$text = chop('text ');;
+				$different = $total != 4;
+		    $integer = is_integer($total);
+						$double = is_double(1.0);
+		        $count = sizeof([ 'x' ]);
+$text = chop('text ');;
 
 		echo ($text);
 
@@ -86,24 +99,26 @@ final class Code
 	 * @param array $items
 	 * @return iterable
 	 */
-	public function generator(array $items): iterable
+				   public function generator(array $items): iterable
 	{
 		yield ($items[0]);
 
 		yield from ($items);
-	}
+				   }
 
-	public function fail() :  void
+	   public function fail() :  void
 	{
 		throw new RuntimeException('Failure.');
-	}
+	   }
 
-	private function helper() :  bool
+				private function helper() :  bool
 	{
-		if (!($this instanceof self)) {
+				if (!($this instanceof self)) {
 			return (false);
 		}
 
 		return (true);
-	}
+				}
+
+
 }
