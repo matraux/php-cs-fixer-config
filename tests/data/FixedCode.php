@@ -2,13 +2,13 @@
 
 namespace Matraux\PhpCsFixer\Tests\Data;
 
+use ArrayObject;
 use DateTimeImmutable;
+use Exception;
 use RuntimeException;
 use SomeVendor\Package\ExampleTrait;
 use SomeVendor\Package\FirstClass;
 use SomeVendor\Package\SecondClass;
-use function strlen;
-use const PHP_VERSION_ID;
 
 final class Code
 {
@@ -43,7 +43,7 @@ final class Code
 		}
 	}
 
-	public function convert(FirstClass $first, SecondClass $second, \ArrayObject $items, DateTimeImmutable $date): string
+	public function convert(FirstClass $first, SecondClass $second, ArrayObject $items, DateTimeImmutable $date): string
 	{
 		$empty = [];
 		$values = ['first', 'second'];
@@ -51,8 +51,8 @@ final class Code
 		$index = array_search($needle, $values, true);
 		$contains = in_array($needle, $values, true);
 		$decoded = base64_decode('dGVzdA==', true);
-		$length = strlen($needle);
-		$version = PHP_VERSION_ID;
+		$length = \strlen($needle);
+		$version = \PHP_VERSION_ID;
 		$copy = clone $items;
 
 		$mapped = array_map(fn(string $item): string => $item . $needle, $values);
@@ -91,8 +91,15 @@ final class Code
 	 * @param string      $type        Type of property
 	 * @param string      $name        Custom name of property
 	 * @param null|string $description Non-required description
+	 *
+	 * @throws Exception If property is empty
 	 */
-	private static function phpdoc($prop, int $type, string $name, $description = null): void {}
+	private static function phpdoc($prop, int $type, string $name, $description = null): void
+	{
+		if (empty($prop)) {
+			throw new Exception('Not implemented');
+		}
+	}
 
 	private function inline(string $x, int $y): void
 	{
@@ -110,6 +117,6 @@ final class Code
 
 	public function __get($name)
 	{
-		throw new \Exception('Not implemented');
+		throw new Exception('Not implemented');
 	}
 }

@@ -28,12 +28,13 @@ final class Code
 
 		 	  	 * @param string $name Custom name of property
 	  	 	 		 * @param null|string $description Non-required description
+	*@throws \Exception If property is empty
 	 	 		  * @return void
 	*
 			*
 	 */
 	private static function phpdoc($prop,int $type,string $name,$description=null): void  {
-
+		if(empty($prop)) {throw new \Exception('Not implemented');}
 	}
 
 	public function __get($name)
