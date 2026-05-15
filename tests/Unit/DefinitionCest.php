@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace Matraux\PhpCodeStyle\Test\Unit;
+namespace Matraux\PhpCsFixer\Test\Unit;
 
-use Matraux\PhpCodeStyle\RuleSet\Sets\Classes;
-use Matraux\PhpCodeStyle\RuleSet\Sets\Functions;
-use Matraux\PhpCodeStyle\RuleSet\Sets\Imports;
-use Matraux\PhpCodeStyle\RuleSet\Sets\Operators;
-use Matraux\PhpCodeStyle\RuleSet\Sets\PhpDoc;
-use Matraux\PhpCodeStyle\RuleSet\Sets\Syntax;
-use Matraux\PhpCodeStyle\Test\Support\UnitTester;
+use Matraux\PhpCsFixer\RuleSet\Sets\Classes;
+use Matraux\PhpCsFixer\RuleSet\Sets\Functions;
+use Matraux\PhpCsFixer\RuleSet\Sets\Imports;
+use Matraux\PhpCsFixer\RuleSet\Sets\Operators;
+use Matraux\PhpCsFixer\RuleSet\Sets\PhpDoc;
+use Matraux\PhpCsFixer\RuleSet\Sets\Syntax;
+use Matraux\PhpCsFixer\Test\Support\UnitTester;
 
 final class DefinitionCest
 {

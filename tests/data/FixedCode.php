@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Matraux\PhpCodeStyle\Tests\Data;
+namespace Matraux\PhpCsFixer\Tests\Data;
 
 use DateTimeImmutable;
 use RuntimeException;

@@ -1,4 +1,4 @@
-namespace: Matraux\PhpCodeStyle\Test
+namespace: Matraux\PhpCsFixer\Test
 support_namespace: Support
 
 paths:

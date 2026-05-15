@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Matraux\PhpCodeStyle\RuleSet\Sets;
+namespace Matraux\PhpCsFixer\RuleSet\Sets;
 
-use Matraux\PhpCodeStyle\RuleSet\Definition;
+use Matraux\PhpCsFixer\RuleSet\Definition;
 
 final class Functions extends Definition
 {

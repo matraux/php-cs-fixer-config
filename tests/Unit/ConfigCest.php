@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Matraux\PhpCodeStyle\Test\Unit;
+namespace Matraux\PhpCsFixer\Test\Unit;
 
-use Matraux\PhpCodeStyle\Test\Support\UnitTester;
+use Matraux\PhpCsFixer\Test\Support\UnitTester;
 use Symfony\Component\Process\Process;
 
 final class ConfigCest

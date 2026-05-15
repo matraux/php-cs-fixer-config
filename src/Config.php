@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace Matraux\PhpCodeStyle;
+namespace Matraux\PhpCsFixer;
 
-use Matraux\PhpCodeStyle\RuleSet\Definition;
-use Matraux\PhpCodeStyle\RuleSet\Sets\Classes;
-use Matraux\PhpCodeStyle\RuleSet\Sets\Functions;
-use Matraux\PhpCodeStyle\RuleSet\Sets\Imports;
-use Matraux\PhpCodeStyle\RuleSet\Sets\Operators;
-use Matraux\PhpCodeStyle\RuleSet\Sets\PhpDoc;
-use Matraux\PhpCodeStyle\RuleSet\Sets\Syntax;
+use Matraux\PhpCsFixer\RuleSet\Definition;
+use Matraux\PhpCsFixer\RuleSet\Sets\Classes;
+use Matraux\PhpCsFixer\RuleSet\Sets\Functions;
+use Matraux\PhpCsFixer\RuleSet\Sets\Imports;
+use Matraux\PhpCsFixer\RuleSet\Sets\Operators;
+use Matraux\PhpCsFixer\RuleSet\Sets\PhpDoc;
+use Matraux\PhpCsFixer\RuleSet\Sets\Syntax;
 use PhpCsFixer\Finder;
 
 final class Config extends \PhpCsFixer\Config

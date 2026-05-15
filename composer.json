@@ -1,7 +1,7 @@
 {
-	"name": "matraux/php-code-style",
-	"description": "A PHP 8.3+ library providing reusable PHP-CS-Fixer rules and shared code style configuration.",
-	"keywords": ["PHP Code Style", "php-code-style", "PHP-CS-Fixer", "coding-standard", "MATRAUX"],
+	"name": "matraux/php-cs-fixer-config",
+	"description": "Shared PHP-CS-Fixer configuration with reusable rule sets for PHP 8.3+.",
+	"keywords": ["php-cs-fixer", "php-cs-fixer-config", "php-cs-fixer-rules", "php-cs-fixer-ruleset", "code-style", "coding-standard", "MATRAUX"],
 	"type": "library",
 	"license": "MIT",
 	"authors": [
@@ -23,17 +23,17 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Matraux\\PhpCodeStyle\\": "src"
+			"Matraux\\PhpCsFixer\\": "src"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Matraux\\PhpCodeStyle\\Test\\": "tests"
+			"Matraux\\PhpCsFixer\\Test\\": "tests"
 		}
 	},
 	"support": {
-		"issues": "https://github.com/matraux/php-code-style/issues",
-		"source": "https://github.com/matraux/php-code-style"
+		"issues": "https://github.com/matraux/php-cs-fixer-config/issues",
+		"source": "https://github.com/matraux/php-cs-fixer-config"
 	},
 	"scripts": {
 		"cs:check": "php-cs-fixer check --diff --using-cache no",

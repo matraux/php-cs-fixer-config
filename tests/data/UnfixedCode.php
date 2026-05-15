@@ -1,6 +1,6 @@
 <?php
 
-namespace Matraux\PhpCodeStyle\Tests\Data;
+namespace Matraux\PhpCsFixer\Tests\Data;
 
 use function strlen;
 
