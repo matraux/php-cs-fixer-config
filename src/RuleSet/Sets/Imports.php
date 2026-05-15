@@ -10,6 +10,11 @@ final class Imports extends Definition
 	{
 		return [
 			'blank_line_between_import_groups' => false,
+			'global_namespace_import' => [
+				'import_classes' => true,
+				'import_functions' => false,
+				'import_constants' => false,
+			],
 			'no_unneeded_import_alias' => true,
 			'no_unused_imports' => true,
 			'fully_qualified_strict_types' => [
