@@ -3,7 +3,7 @@ name: Quality Assurance
 on:
   push:
     branches:
-      - master
+      - php-7.4
 
 jobs:
   codecheck:
