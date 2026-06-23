@@ -7,6 +7,25 @@ env:
   PHP_VERSION: '8.3'
 
 jobs:
+  audit:
+    name: Audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ env.PHP_VERSION }}
+          tools: composer
+
+      - name: Run Composer
+        run: composer install --no-interaction --no-progress --prefer-dist --optimize-autoloader
+
+      - name: Run Composer audit
+        run: composer audit --format=summary --abandoned=fail
+
   codecheck:
     name: Coding Style
     runs-on: ubuntu-latest
